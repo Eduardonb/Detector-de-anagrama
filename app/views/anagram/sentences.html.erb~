@@ -1,0 +1,15 @@
+<h1>Frases</h1>
+<form>
+  <div class="row">
+    <div class="medium-6 columns">
+      <label>Primeira frase
+        <input type="text" placeholder="Digite aqui a palavra">
+      </label>
+    </div>
+    <div class="medium-6 columns">
+      <label>Segunda frase
+        <input type="text" placeholder="Digite aqui a palavra">
+      </label>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_sentence: MyString
+  second_sentence: MyString
+  is_anagram: false
+
+two:
+  first_sentence: MyString
+  second_sentence: MyString
+  is_anagram: false

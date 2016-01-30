@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Detector de anagramas</title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <ul class="menu" id="menu">
+        <li class="menu-text">Detector de Anagramas</li>
+        <li><a href="/anagram/index">Verificar anagramas</a></li>
+        <li><a href="/anagram/list">Historico</a></li>
+    </ul>
+    
+    <h1>Detector de Anagramas</h1>
+    <div id="content">
+        <%= yield %>
+    </div>
+  </body>
+</html>

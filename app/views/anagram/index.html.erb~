@@ -1,0 +1,36 @@
+<%= form_tag do %>
+    <div class="row">
+        <div class="medium-10 columns">
+            <div class="row">
+                <div class="medium-6 columns">
+                    <%= label_tag(:first_sentence, "Primeira palavra") %>
+                    <%= text_field_tag(:first_sentence)%>
+                </div>
+                <div class="medium-6 columns">
+                    <%= label_tag(:second_sentence, "Segunda palavra") %>
+                    <%= text_field_tag(:second_sentence)%>
+                </div>
+            </div>
+        </div>
+        <div class="medium-2 columns">
+            <%= submit_tag("Enviar", :class=>"button submit-button")%>
+        </div>
+    </div>
+<% end %>
+
+<% if @anagrama %>
+    <div class="row">
+        <div class="medium-10">
+            <% if @anagrama.is_anagram == true %>
+                <div class="success callout">
+                    <p>"<%= @anagrama.first_sentence %>" e "<%= @anagrama.second_sentence %>" são anagramas!</p>
+                </div>
+            <% end %>
+            <% if @anagrama.is_anagram == false %>
+                <div class="alert callout">
+                    <p>"<%= @anagrama.first_sentence %>" e "<%= @anagrama.second_sentence %>" não são anagramas</p>
+                </div>
+            <% end %>
+        </div>
+    </div>
+<% end %>

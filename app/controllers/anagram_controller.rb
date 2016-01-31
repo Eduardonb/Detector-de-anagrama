@@ -8,7 +8,7 @@ class AnagramController < ApplicationController
     end
 
     def create
-	manager = Anagram_manager.new
+	manager = AnagramManager.new
 	anagram = Anagram.create(
 		first_sentence: params[:first_sentence], 
 		second_sentence: params[:second_sentence], 

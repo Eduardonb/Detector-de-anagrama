@@ -17,10 +17,12 @@
 
 body {background-color: #f2f2f2}
 
-h1 {text-align: center; margin-top:5px}
+h1 {text-align: center; margin-top:10px}
 
 .submit-button {margin-top: 25px}
 
 #content {margin-top: 3%}
 
 #menu {margin-top: 10px}
+
+.success {margin-left: 15px}

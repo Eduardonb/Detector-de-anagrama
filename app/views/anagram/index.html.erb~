@@ -1,3 +1,19 @@
+<% if @anagram %>
+    <div class="row">
+        <div class="medium-10">
+            <% if @anagram.is_anagram == true %>
+                <div class="success callout success-messege">
+                    <p>"<%= @anagram.first_sentence %>" e "<%= @anagram.second_sentence %>" são anagramas!</p>
+                </div>
+            <% end %>
+            <% if @anagram.is_anagram == false %>
+                <div class="alert callout fail-messege">
+                    <p>"<%= @anagram.first_sentence %>" e "<%= @anagram.second_sentence %>" não são anagramas</p>
+                </div>
+            <% end %>
+        </div>
+    </div>
+<% end %>
 <%= form_tag do %>
     <div class="row">
         <div class="medium-10 columns">
@@ -18,19 +34,3 @@
     </div>
 <% end %>
 
-<% if @anagram %>
-    <div class="row">
-        <div class="medium-10">
-            <% if @anagram.is_anagram == true %>
-                <div class="success callout">
-                    <p>"<%= @anagram.first_sentence %>" e "<%= @anagram.second_sentence %>" são anagramas!</p>
-                </div>
-            <% end %>
-            <% if @anagram.is_anagram == false %>
-                <div class="alert callout">
-                    <p>"<%= @anagram.first_sentence %>" e "<%= @anagram.second_sentence %>" não são anagramas</p>
-                </div>
-            <% end %>
-        </div>
-    </div>
-<% end %>

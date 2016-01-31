@@ -1,4 +1,4 @@
-class Anagram_manager
+class AnagramManager
 
     def verify_anagram(param1, param2)
 	first_sentence = pick_up_letters(param1.downcase)

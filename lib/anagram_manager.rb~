@@ -11,7 +11,7 @@ class Anagram_manager
 	letters = sentence.split(//)
 	letters.sort!
 	
-	letters.reject { |e| e.blank?}
+	letters.reject { |e| e == ' '}
     end
 end
 

@@ -6,10 +6,6 @@ class AnagramController < ApplicationController
 	end	  
     end
 
-    def list
-	
-    end
-
     def create
 	anagram = Anagram.create(
 		first_sentence: params[:first_sentence], 

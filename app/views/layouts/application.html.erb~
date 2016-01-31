@@ -17,6 +17,8 @@
         <li><a href="/anagram/index">Verificar anagramas</a></li>
         <li><a href="/anagram/list">Historico</a></li>
     </ul>
+    
+    <h1>Detector de Anagramas</h1>
     <div id="content">
         <%= yield %>
     </div>

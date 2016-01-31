@@ -3,11 +3,11 @@
         <div class="medium-10 columns">
             <div class="row">
                 <div class="medium-6 columns">
-                    <%= label_tag(:first_sentence, "Primeira palavra") %>
+                    <%= label_tag(:first_sentence, "Primeira palavra ou frase") %>
                     <%= text_field_tag(:first_sentence)%>
                 </div>
                 <div class="medium-6 columns">
-                    <%= label_tag(:second_sentence, "Segunda palavra") %>
+                    <%= label_tag(:second_sentence, "Segunda palavra ou frase") %>
                     <%= text_field_tag(:second_sentence)%>
                 </div>
             </div>
@@ -18,17 +18,17 @@
     </div>
 <% end %>
 
-<% if @anagrama %>
+<% if @anagram %>
     <div class="row">
         <div class="medium-10">
-            <% if @anagrama.is_anagram == true %>
+            <% if @anagram.is_anagram == true %>
                 <div class="success callout">
-                    <p>"<%= @anagrama.first_sentence %>" e "<%= @anagrama.second_sentence %>" são anagramas!</p>
+                    <p>"<%= @anagram.first_sentence %>" e "<%= @anagram.second_sentence %>" são anagramas!</p>
                 </div>
             <% end %>
-            <% if @anagrama.is_anagram == false %>
+            <% if @anagram.is_anagram == false %>
                 <div class="alert callout">
-                    <p>"<%= @anagrama.first_sentence %>" e "<%= @anagrama.second_sentence %>" não são anagramas</p>
+                    <p>"<%= @anagram.first_sentence %>" e "<%= @anagram.second_sentence %>" não são anagramas</p>
                 </div>
             <% end %>
         </div>
